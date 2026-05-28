@@ -211,7 +211,7 @@ export default function SalonPublicPage({ params }) {
     <div style={currentTheme} className="salon-custom-booking-page">
       
       {/* Dynamic Styled Page Wrapper Styles */}
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .salon-custom-booking-page {
           background-color: var(--bg-primary);
           color: var(--text-primary);
@@ -332,7 +332,7 @@ export default function SalonPublicPage({ params }) {
           border-color: var(--gold-primary);
           background: rgba(212, 175, 55, 0.05);
         }
-      `}</style>
+      ` }} />
 
       {/* Styled Page Header */}
       <header className="themed-header">
